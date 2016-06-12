@@ -6,4 +6,4 @@ ENV ETHER_DIR /etherpad/
 
 WORKDIR  ${ETHER_DIR}
 ADD . $ETHER_DIR
-RUN "./bin/run.sh"
+ENTRYPOINT "./bin/run.sh"
